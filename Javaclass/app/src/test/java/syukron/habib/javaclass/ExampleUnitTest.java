@@ -1,4 +1,4 @@
-package august.javaclass;
+package syukron.habib.javaclass;
 
 import org.junit.Test;
 

@@ -1,7 +1,7 @@
-package august.javaclass;
+package syukron.habib.javaclass;
 
 /**
- * Created by D2J-00 on 31/01/2017.
+ * Created by D2J-00 on 01/02/2017.
  */
 public class Barang {
     public static final int ELETRONIK = 1;
