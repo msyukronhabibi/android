@@ -13,7 +13,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Angka 1" />
+        android:text="Angka 1"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
     <EditText
         android:id="@+id/num1"
         android:layout_width="match_parent"
@@ -24,42 +26,47 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <RadioButton
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="50dp"
             android:id="@+id/plus"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="+"/>
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="30dp"/>
         <RadioButton
-            android:layout_marginRight="30dp"
             android:id="@+id/minus"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="-"/>
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="30dp"/>
         <RadioButton
-            android:layout_marginRight="30dp"
             android:id="@+id/kali"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="*"/>
+            android:layout_weight="1"
+            android:text="x"
+            android:textSize="30dp"/>
         <RadioButton
-            android:layout_marginRight="30dp"
             android:id="@+id/bagi"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="/"/>
+            android:layout_weight="1"
+            android:text="/"
+            android:textSize="30dp"/>
     </RadioGroup>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Angka 2" />
+        android:text="Angka 2"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
     <EditText
         android:id="@+id/num2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="75dp"
         android:text="Hitung"
         android:onClick="calculate"/>
     <TextView
