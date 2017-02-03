@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
+    public final static String EXTRA = "syukron.habib.geometrycalculator.Main";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
