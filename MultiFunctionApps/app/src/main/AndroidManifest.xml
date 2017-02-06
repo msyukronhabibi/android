@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ShowMessage" />
-        <activity android:name=".IntentExecutor"></activity>
+        <activity android:name=".IntentExecutor" />
+        <activity android:name=".SendEmail"></activity>
     </application>
 
 </manifest>
