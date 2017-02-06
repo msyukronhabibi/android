@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="syukron.habib.tipscalculator.MainActivity">
+
+    <TextView
+        android:id="@+id/txt_tagih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tagihan"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/input_tagih"
+        android:layout_below="@id/txt_tagih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/input_persen"
+        android:layout_below="@id/input_tagih"
+        android:layout_alignParentRight="true"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginRight="40dp"
+        android:inputType="numberDecimal"/>
+    <TextView
+        android:id="@+id/txt_persen"
+        android:layout_below="@id/input_tagih"
+        android:layout_alignBottom="@id/input_persen"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Persen Tip"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/persen"
+        android:layout_below="@id/input_tagih"
+        android:layout_alignBottom="@id/input_persen"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textSize="35dp"/>
+
+
+    <EditText
+        android:id="@+id/input_jumlah"
+        android:layout_below="@id/input_persen"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:inputType="numberDecimal"/>
+    <TextView
+        android:id="@+id/txt_jml"
+        android:layout_below="@id/txt_persen"
+        android:layout_alignBottom="@id/input_jumlah"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Orang"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_jumlah"
+        android:text="HITUNG"
+        android:onClick="calculate"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_below="@id/hitung"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>
