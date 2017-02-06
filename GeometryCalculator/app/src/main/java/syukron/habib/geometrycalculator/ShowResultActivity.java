@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class ShowResultActivity extends AppCompatActivity {
 
@@ -12,7 +13,9 @@ public class ShowResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_result);
 
-        Button btn = (Button) findViewById(R.id.btn_calc);
-        Intent intent;
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(MainActivity.EXTRA);
+        TextView messageArea = (TextView) findViewById(R.id.result);
+        messageArea.setText(message);
     }
 }

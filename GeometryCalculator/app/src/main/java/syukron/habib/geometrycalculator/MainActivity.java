@@ -1,5 +1,6 @@
 package syukron.habib.geometrycalculator;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -61,6 +62,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
         TextView result = (TextView) findViewById(R.id.result);
         result.setText(hasil);
+        Intent intent = new Intent(this, ShowResultActivity.class);
+        intent.putExtra(EXTRA,result.getText().toString());
+        startActivity(intent);
     }
 
     @Override
