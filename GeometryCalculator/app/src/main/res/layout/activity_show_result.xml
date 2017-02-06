@@ -12,7 +12,6 @@
 
     <TextView
         android:id="@+id/result"
-        android:layout_below="@id/btn_calc"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textSize="50dp"
