@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="syukron.habib.shopreceipt.MainActivity">
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/input1"
+        android:gravity="center_vertical"
+        android:text="Micro SD"/>
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_below="@id/input1"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_below="@id/input1"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/input2"
+        android:gravity="center_vertical"
+        android:text="Softcase"/>
+
+    <EditText
+        android:id="@+id/input3"
+        android:layout_below="@id/input2"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_below="@id/input2"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/input3"
+        android:gravity="center_vertical"
+        android:text="Headset"/>
+
+    <EditText
+        android:id="@+id/input4"
+        android:layout_below="@id/input3"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_below="@id/input3"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/input4"
+        android:gravity="center_vertical"
+        android:text="Flashdisk 16Gb"/>
+
+    <EditText
+        android:id="@+id/input5"
+        android:layout_below="@id/input4"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_below="@id/input4"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/input5"
+        android:gravity="center_vertical"
+        android:text="Modem"/>
+
+    <EditText
+        android:id="@+id/input6"
+        android:layout_below="@id/input5"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+    <TextView
+        android:id="@+id/txt6"
+        android:layout_below="@id/input5"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/input6"
+        android:gravity="center_vertical"
+        android:text="Joystick"/>
+
+    <Button
+        android:id="@+id/cekFaktur"
+        android:layout_below="@id/input6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cek Faktur"
+        android:onClick="calculate"/>
+
+    <TextView
+        android:id="@+id/txt_message"
+        android:layout_below="@id/cekFaktur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
