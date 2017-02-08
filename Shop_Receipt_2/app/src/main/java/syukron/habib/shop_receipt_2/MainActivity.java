@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -15,8 +17,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void printReceipt(View view){
-        int[] num_barang = new int[6];
+//        int[] num_barang = new int[6];
         String[] barang = new String[6];
+        ArrayList<Integer> num_barang = new ArrayList<>();
 
         barang[0] = ((EditText) findViewById(R.id.plasma_num)).getText().toString();
         barang[1] = ((EditText) findViewById(R.id.microwave_num)).getText().toString();
@@ -25,20 +28,29 @@ public class MainActivity extends AppCompatActivity {
         barang[4] = ((EditText) findViewById(R.id.secure_num)).getText().toString();
         barang[5] = ((EditText) findViewById(R.id.dvd_num)).getText().toString();
 
-        num_barang[0] = Integer.parseInt(barang[0]);
-        num_barang[1] = Integer.parseInt(barang[1]);
-        num_barang[2] = Integer.parseInt(barang[2]);
-        num_barang[3] = Integer.parseInt(barang[3]);
-        num_barang[4] = Integer.parseInt(barang[4]);
-        num_barang[5] = Integer.parseInt(barang[5]);
+        num_barang.add(Integer.parseInt(barang[0]));
+        num_barang.add(Integer.parseInt(barang[1]));
+        num_barang.add(Integer.parseInt(barang[2]));
+        num_barang.add(Integer.parseInt(barang[3]));
+        num_barang.add(Integer.parseInt(barang[4]));
+        num_barang.add(Integer.parseInt(barang[5]));
+
+//        num_barang[0] = Integer.parseInt(barang[0]);
+//        num_barang[1] = Integer.parseInt(barang[1]);
+//        num_barang[2] = Integer.parseInt(barang[2]);
+//        num_barang[3] = Integer.parseInt(barang[3]);
+//        num_barang[4] = Integer.parseInt(barang[4]);
+//        num_barang[5] = Integer.parseInt(barang[5]);
 
         Intent intent = new Intent(this, ShowResult.class);
-        intent.putExtra("main.plasma.num", num_barang[0]);
-        intent.putExtra("main.microwave.num", num_barang[1]);
-        intent.putExtra("main.vacum.num", num_barang[2]);
-        intent.putExtra("main.ac.num", num_barang[3]);
-        intent.putExtra("main.secure.num", num_barang[4]);
-        intent.putExtra("main.dvd.num", num_barang[5]);
+        intent.putExtra("main.barang.num", num_barang);
+
+//        intent.putExtra("main.plasma.num", num_barang[0]);
+//        intent.putExtra("main.microwave.num", num_barang[1]);
+//        intent.putExtra("main.vacum.num", num_barang[2]);
+//        intent.putExtra("main.ac.num", num_barang[3]);
+//        intent.putExtra("main.secure.num", num_barang[4]);
+//        intent.putExtra("main.dvd.num", num_barang[5]);
 
         startActivity(intent);
     }
