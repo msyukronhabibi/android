@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DatailActivity"></activity>
+        <activity android:name=".DatailActivity" />
+        <activity android:name=".TambahList"></activity>
     </application>
 
 </manifest>
